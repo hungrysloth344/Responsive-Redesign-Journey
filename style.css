@@ -1,0 +1,306 @@
+section {
+  padding: 60px 0 0 0;
+}
+
+body {
+  background-color: #c0b2d6b8;
+}
+#title {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #c0b2d6b8;
+}
+
+#title h1 {
+  font-weight: bold;
+}
+
+#resize {
+  width: 60%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+#des {
+  width: 60%;
+}
+
+li span {
+  font-weight: normal;
+}
+
+.personas-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.personas-container img {
+  width: 350px;
+  height: 290px;
+}
+
+.style-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.personas-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  background-color: rgba(250, 228, 183, 0.718);
+  padding: 1rem;
+  width: 375px;
+}
+
+#overview {
+  background-color: #c0b2d6b8;
+  display: flex;
+}
+
+#preparation {
+  background-color: #c0b2d6b8;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#observations {
+  background-color: #c0b2d6b8;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-right: 3rem;
+}
+
+#personas {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#storyboards {
+  background-color: #c0b2d6b8;
+}
+
+#intro {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+}
+
+#wireframe {
+  height: 100%;
+}
+
+#wireframes {
+  background-color: #c0b2d6b8;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.web a:link {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* visited link */
+.web a:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* mouse over link */
+.web a:hover {
+  color: gray;
+  /* text-decoration: none; */
+  font-size: 25px;
+}
+
+/* selected link */
+.web a:active {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#design {
+  background-color: #c0b2d6b8;
+}
+
+#prototype {
+  background-color: #c0b2d6b8;
+}
+
+#web {
+  background-color: #c0b2d6b8;
+  padding-bottom: 3rem;
+}
+/* @media (max-width: 1328px) {
+
+    h1 {
+      text-align: center;
+      font-size: 500rem;
+    }
+  } */
+
+#redesigned {
+  width: 80%;
+}
+
+p {
+  text-align: center;
+}
+
+#bullets {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+@media (max-width: 680px) {
+    #resize {
+        width:20rem;
+        height:10rem;
+    }
+    #redesigned {
+        width: 20rem;
+      }
+  }
+
+@media (min-width: 1833px) {
+    #cs1300{
+        font-size: 3rem;
+    }
+    .navbar-nav {
+        font-size: 3rem;
+      }
+      .navbar {
+        min-height: 300px;
+        font-size: 3rem
+      }
+      .navbar-brand {
+        font-size: 3rem;
+      }
+      #title {
+        padding-top: 30rem;
+        padding-bottom: 40px;
+      }
+      #title h1 {
+        font-size: 13rem;
+      }
+      #title h2 {
+        font-size: 8rem;
+       
+      }
+      .web {
+        font-size: 5rem;
+      }
+      #overview h2{
+        font-size: 8rem;
+        padding-bottom: 5rem;
+      }
+      #intro {
+        font-size: 5rem;
+      }
+      #personas {
+        padding-top: 2rem;
+      }
+      .personas-card p {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 1050px;
+      }
+      .personas-card {
+        height: 1050px;
+   
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            background-color: rgba(250, 228, 183, 0.718);
+            padding: 5rem;
+            width: 1050px;
+  
+      }
+      #bullets {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 850px;
+        font-size: 3rem;
+      }
+      .personas-card p {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 4rem;
+      }
+      #access {
+        font-size: 3rem;
+      } 
+      #wireframes h2{
+        font-size: 8rem;
+        padding-bottom: 5rem;
+      }
+      .personas-container img {
+        width: 1100px;
+        height: 290px;
+      }
+      #design h2{
+        font-size: 8rem;
+        padding-bottom: 5rem;
+      }
+      #prototype h2{
+        font-size: 8rem;
+        padding-bottom: 5rem;
+      }
+      #web {
+        padding-bottom: 5rem;
+      }
+      #web h2{
+        font-size: 8rem;
+        padding-bottom: 3rem;
+      }
+      #web p{
+        font-size: 4rem;
+      }
+      #redesigned {
+        width: 100rem;
+      }
+      section {
+        padding: 20rem 0 0 0;
+      }
+}
