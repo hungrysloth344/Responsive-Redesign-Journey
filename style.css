@@ -35,7 +35,7 @@ li span {
   font-weight: normal;
 }
 
-.personas-container {
+.probs-container {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -43,7 +43,33 @@ li span {
   gap: 2rem;
 }
 
-.personas-container img {
+.wire-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.proto-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.probs-container img {
+  width: 350px;
+  height: 290px;
+}
+
+.wire-container img {
+  width: 350px;
+  height: 290px;
+}
+
+.proto-container img {
   width: 350px;
   height: 290px;
 }
@@ -56,14 +82,14 @@ li span {
   gap: 3rem;
 }
 
-.personas-card {
+.probs-card {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   background-color: rgba(250, 228, 183, 0.718);
   padding: 1rem;
-  width: 375px;
+ width:16rem;
 }
 
 #overview {
@@ -88,7 +114,7 @@ li span {
   margin-right: 3rem;
 }
 
-#personas {
+#probs {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -148,6 +174,9 @@ a {
 
 #design {
   background-color: #c0b2d6b8;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #prototype {
@@ -157,6 +186,9 @@ a {
 #web {
   background-color: #c0b2d6b8;
   padding-bottom: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 /* @media (max-width: 1328px) {
 
@@ -180,127 +212,132 @@ p {
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  width: 350px;
 }
 
 @media (max-width: 680px) {
-    #resize {
-        width:20rem;
-        height:10rem;
-    }
-    #redesigned {
-        width: 20rem;
-      }
+  #resize {
+    width: 20rem;
+    height: 10rem;
   }
+  #redesigned {
+    width: 20rem;
+  }
+}
 
 @media (min-width: 1833px) {
-    #cs1300{
-        font-size: 3rem;
-    }
-    .navbar-nav {
-        font-size: 3rem;
-      }
-      .navbar {
-        min-height: 300px;
-        font-size: 3rem
-      }
-      .navbar-brand {
-        font-size: 3rem;
-      }
-      #title {
-        padding-top: 30rem;
-        padding-bottom: 40px;
-      }
-      #title h1 {
-        font-size: 13rem;
-      }
-      #title h2 {
-        font-size: 8rem;
-       
-      }
-      .web {
-        font-size: 5rem;
-      }
-      #overview h2{
-        font-size: 8rem;
-        padding-bottom: 5rem;
-      }
-      #intro {
-        font-size: 5rem;
-      }
-      #personas {
-        padding-top: 2rem;
-      }
-      .personas-card p {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 1050px;
-      }
-      .personas-card {
-        height: 1050px;
-   
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            justify-content: center;
-            background-color: rgba(250, 228, 183, 0.718);
-            padding: 5rem;
-            width: 1050px;
-  
-      }
-      #bullets {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 850px;
-        font-size: 3rem;
-      }
-      .personas-card p {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        flex-wrap: wrap;
-        font-size: 4rem;
-      }
-      #access {
-        font-size: 3rem;
-      } 
-      #wireframes h2{
-        font-size: 8rem;
-        padding-bottom: 5rem;
-      }
-      .personas-container img {
-        width: 1100px;
-        height: 290px;
-      }
-      #design h2{
-        font-size: 8rem;
-        padding-bottom: 5rem;
-      }
-      #prototype h2{
-        font-size: 8rem;
-        padding-bottom: 5rem;
-      }
-      #web {
-        padding-bottom: 5rem;
-      }
-      #web h2{
-        font-size: 8rem;
-        padding-bottom: 3rem;
-      }
-      #web p{
-        font-size: 4rem;
-      }
-      #redesigned {
-        width: 100rem;
-      }
-      section {
-        padding: 20rem 0 0 0;
-      }
+  #cs1300 {
+    font-size: 3rem;
+  }
+  .navbar-nav {
+    font-size: 3rem;
+  }
+  .navbar {
+    min-height: 300px;
+    font-size: 3rem;
+  }
+  .navbar-brand {
+    font-size: 3rem;
+  }
+  #title {
+    padding-top: 30rem;
+    padding-bottom: 40px;
+  }
+  #title h1 {
+    font-size: 13rem;
+  }
+  #title h2 {
+    font-size: 8rem;
+  }
+  .web {
+    font-size: 5rem;
+  }
+  #overview h2 {
+    font-size: 8rem;
+    padding-bottom: 5rem;
+  }
+  #intro {
+    font-size: 5rem;
+  }
+  #probs {
+    padding-top: 2rem;
+  }
+  .probs-card p {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 900px;
+  }
+  .probs-card {
+    height: 1050px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: rgba(250, 228, 183, 0.718);
+    padding: 5rem;
+    width: 1050px;
+  }
+  #bullets {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 850px;
+    font-size: 3rem;
+  }
+  .probs-card p {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
+  }
+  #access {
+    font-size: 3rem;
+  }
+  #wireframes h2 {
+    font-size: 8rem;
+    padding-bottom: 5rem;
+  }
+  .probs-container img {
+    width: 1100px;
+    height: 290px;
+  }
+  .wire-container img {
+    width: 1100px;
+    height: 290px;
+  }
+  .proto-container img {
+    width: 1100px;
+    height: 290px;
+  }
+  #design h2 {
+    font-size: 8rem;
+    padding-bottom: 5rem;
+  }
+  #prototype h2 {
+    font-size: 8rem;
+    padding-bottom: 5rem;
+  }
+  #web {
+    padding-bottom: 5rem;
+  }
+  #web h2 {
+    font-size: 8rem;
+    padding-bottom: 3rem;
+  }
+  #web p {
+    font-size: 4rem;
+  }
+  #redesigned {
+    width: 100rem;
+  }
+  section {
+    padding: 20rem 0 0 0;
+  }
 }

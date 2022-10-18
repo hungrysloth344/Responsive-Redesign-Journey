@@ -19,18 +19,18 @@
 <body>
     <!-- nav bar was adopted using https://www.codeply.com/p/7plDNvBJnB -->
     <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top mr-auto #3A1C1B;">
-        <a id="cs1300" href="#" class="navbar-brand">CSCI1300</a>
+        <a id="cs1300" href="#" alt="nav bar link to go to scroll to top" class="navbar-brand">CSCI1300</a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
-                <li class="nav-item"><a href="#problems" class="nav-link">Problems</a></li>
-                <li class="nav-item"><a href="#wireframes" class="nav-link">Wireframes</a></li>
-                <li class="nav-item"><a href="#design" class="nav-link">Style Guide</a></li>
-                <li class="nav-item"><a href="#prototype" class="nav-link">Prototypes</a></li>
-                <li class="nav-item"><a href="#web" class="nav-link">Redesigned Website</a></li>
+                <li class="nav-item"><a href="#overview" alt="link to overview section" class="nav-link">Overview</a></li>
+                <li class="nav-item"><a href="#problems" alt="link to problems section" class="nav-link">Problems</a></li>
+                <li class="nav-item"><a href="#wireframes" alt="link to wireframes section" class="nav-link">Wireframes</a></li>
+                <li class="nav-item"><a href="#design" alt="link to design section" class="nav-link">Style Guide</a></li>
+                <li class="nav-item"><a href="#prototype" alt="link to prototype section" class="nav-link">Prototypes</a></li>
+                <li class="nav-item"><a href="#web" alt="link to redesigned website section" class="nav-link">Redesigned Website</a></li>
             </ul>
         </div>
     </nav>
@@ -38,172 +38,138 @@
     <div id="title" class="d-flex flex-column justify-content-center align-items-center">
         <h1>Responsive Redesign</h1>
         <h2>Hilo Farmers Market</h2>
-        <a class='web' style='color: blue;' href="http://hilofarmersmarket.com/">Old Website</a>
-        <a class='web'style='color: blue;' href="https://hungrysloth344.github.io/Responsive-Redesign/">New Website</a>
+        <a class='web' alt="link to old site" style='color: blue;' href="http://hilofarmersmarket.com/">Old Website</a>
+        <a class='web' alt="link to new site" style='color: blue;' href="https://hungrysloth344.github.io/Responsive-Redesign/">New Website</a>
     </div>
 
     <section id="overview" class="container-fluid display-flex flex-column justify-content-center align-items-center">
         <h2>Overview</h2>
-
-
-        <p id="intro" class="lead">The goal of this assignment is to practice the workflow of redesigning a simple website, from
+        <p id="intro" class="lead">The goal of this assignment is to practice the workflow of redesigning a simple
+            website, from
             analyzing and identifying flaws in an existing interface, creating low-fidelity and high-fidelity prototypes
             for various screen sizes, and building a responsive website based on those prototypes.
         </p>
+        <img id="resize" src="images/oldweb.png" alt="Screenshot of the old website"/>
+        <p id="intro" class="lead">I chose to redesign the Hilo Farmers Market website because of the usability,
+            learnability,
+            and memorability issues and the unresponsiveness of the website with different dimensions.
+        </p>
 
-        <img id="resize" src="images/oldweb.png"/>
-        <div>
-            <p id="intro" class="lead">I chose to redesign the Hilo Farmers Market website because of the usability, learnability,
-                and memorability issues and the unresponsiveness of the website with different dimensions.
-            </p>
+        <section id="problems" class="container-fluid display-flex">
+            <h2>Previous Problems</h2>
 
-            <section id="problems" class="container-fluid display-flex">
-                <h2>Previous Problems</h2>
+            <div id="probs" class="container-fluid display-flex">
+           
 
-                <section id="personas" class="container-fluid display-flex">
-                  
-                    <div class="personas-container">
-                        <div class="personas-card">
+                    <div class="probs-container">
+                        <div class="probs-card">
                             <p class="lead">Usability</p>
-                            
-                                <ul id = "bullets" type="" style="font-weight: bold">
-                                    <li><span>Contains information in the long home page that could be contained in separate tabs
-                                        </span></li>
-                                    <li><span>Has two different menu bars, with tabs that have similar labels that can be consolidated 
-                                           </span></li>
-                                    <li><span>Includes a search bar that does not work and has no error prevention</span>
-                                    </li>
-                                    <li><span>Has inconsistent fonts throughout the entire website</span></li>
-                                    <li><span>Uses a displeasing aesthetic with a extensively filled page</span></li>
-                                </ul>
-                            
+
+                            <ul id="bullets" type="" style="font-weight: bold">
+                                <li><span>Contains information in the long home page that could be contained in separate
+                                        tabs
+                                    </span></li>
+                                <li><span>Has two different menu bars, with tabs that have similar labels 
+                                    </span></li>
+                                <li><span>Includes a search bar with no functionality or error prevention</span>
+                                </li>
+                                <li><span>Has inconsistent fonts throughout the website</span></li>
+                                <li><span>Uses a displeasing aesthetic with a extensively filled page</span></li>
+                            </ul>
+
                         </div>
-                        <div class="personas-card">
+                        <div class="probs-card">
                             <p class="lead">Learnability</p>
-                            <ul id = "bullets" type="" style="font-weight: bold">
-                                <li><span>Has an abundant amount of tabs which makes it difficult for users to navigate on the website
+                            <ul id="bullets" type="" style="font-weight: bold">
+                                <li><span>Has an abundant amount of tabs which makes it difficult for users to navigate
+                                        on the website
                                     </span></li>
-                                    <li><span>The inconsistent font color and sizes does not help the user create patterns or a mental key/legend
+                                <li><span>The inconsistent font color and sizes does not help the user create patterns
+                                        or a mental key/legend
                                     </span></li>
-                                <li><span>Includes a long home page that does not help users directly find what they are looking for
-                                       </span></li>
+                                <li><span>Includes a long home page that does not help users directly find what they are
+                                        looking for
+                                    </span></li>
                                 <li><span>Does not include any help documentation</span>
                                 </li>
-                                </ul>
+                            </ul>
                         </div>
-                        <div class="personas-card">
+
+                        <div class="probs-card">
                             <p class="lead">Memorability</p>
-                            <ul id = "bullets" type="" style="font-weight: bold">
-                                <li><span>Contains a large amount of tabs and information on the page which creates difficulty for users to relearn how to use the website
+                            <ul id="bullets" type="" style="font-weight: bold">
+                                <li><span>Contains a large amount of tabs and information on the page which creates
+                                        difficulty for users to relearn how to use the website
                                     </span></li>
-                                <li><span>Links to visuals instead of showing, such as the map, and does not minimize the user's memory load 
-                                       </span></li>
-                                       <li><span>Inconsistency of font and font color forces user to relearn the meaning of the differences
+                                <li><span>Links to visuals instead of showing, such as the map, and does not minimize
+                                        the user's memory load
                                     </span></li>
-                                </ul>
+                                <li><span>Inconsistency of font and font color forces user to relearn the meaning of the
+                                        differences
+                                    </span></li>
+                            </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <section id="personas" class="container-fluid display-flex">
-                    
-                    <div class="personas-container">
-                        
-                        <div class="personas-card">
+
+                <section id="probs" class="container-fluid display-flex">
+                    <div class="probs-container">
+                        <div class="probs-card">
                             <p class="lead">Accessibility</p>
-                            <ul id = "bullets" type="" style="font-weight: bold">
+                            <ul id="bullets" type="" style="font-weight: bold">
                                 <li><span>4 images missing alt texts
                                     </span></li>
-                                    <li><span>1 empty label and 1 missing label
+                                <li><span>1 empty label and 1 missing label
                                     </span></li>
-                                    <li><span>1 empty heading and 1 empty link
+                                <li><span>1 empty heading and 1 empty link
                                     </span></li>
-                                    
-                                
-                                </ul>
-                                <p id="access" style="text-align:left; padding-left:1rem">I agree with the problems detected because the content of an image will not be available to screen reader users or when the image is unavailable. I also agree with the problems found with empty or missing headings, links, and labels which are essential for screen reader users to understand the function or purpose of the element, link, or form control.
-                                </p>
+                            </ul>
+                            <p id="access" style="text-align:left; padding-left:1rem">I agree with the problems detected
+                                because the content of an image will not be available to screen reader users or when the
+                                image is unavailable. I also agree with the problems found with empty or missing
+                                headings, links, and labels which are essential for screen reader users to understand
+                                the function or purpose of the element, link, or form control.
+                            </p>
                         </div>
                     </div>
                     <br><br>
                 </section>
-
             </section>
-</div>
         </section>
-        
+    </section>
+    </section>
 
-        <section id="wireframes" class="container-fluid display-flex">
 
-                <h2>Lo-Fi Wireframes</h2>
-           
-            <div class="personas-container" class="container-fluid display-flex">
-       
-                    <img id="wireframe" src="images/phonewire.png" />
-
-                    <img id="wireframe" src="images/ipadwire.png" />
-
-                    <img id="wireframe" src="images/webwire.png"/>
-            </div>
-        </section>
-
-        <section id="design" class="container-fluid display-flex">
-
-            <h2>Visual Design Style Guide</h2>
-       
-        <div class="style-container" class="container-fluid display-flex">
-   
-            <img id="resize" src="images/visual.png" style="border: .1rem solid black;" />
+    <section id="wireframes" class="container-fluid display-flex">
+        <h2>Lo-Fi Wireframes</h2>
+        <div class="wire-container" class="container-fluid display-flex">
+            <img id="wireframe" src="images/phonewire.png" alt="lofi wireframe on a the phone"/>
+            <img id="wireframe" src="images/ipadwire.png" alt="lofi wireframe on an iPad"/>
+            <img id="wireframe" src="images/webwire.png" alt="lofi wireframe on a desktop"/>
         </div>
     </section>
 
-        <!-- <section id="design" class="container-fluid display-flex">
-            <div id="designs"
-                class="container-fluid display-flex flex-column justify-content-center align-items-center">
+    <section id="design" class="container-fluid display-flex">
+        <h2>Visual Design Style Guide</h2>
+        <img id="resize" src="images/visual.png" alt="visual design style guide" style="border: .1rem solid black;" />
+    </section>
+    <section id="prototype" class="container-fluid display-flex">
+        <h2>Hi-Fi Prototypes</h2>
+        <div class="proto-container" class="container-fluid display-flex">
+            <img id="wireframe" src="images/phoneproto.png" alt="hifi prototype on a phone" />
+            <img id="wireframe" src="images/ipadproto.png" alt="hifi prototype on an iPad" />
+            <img id="wireframe" src="images/webproto.png" alt="hifi prototype on a desktop" />
+        </div>
+    </section>
 
-                <h2>Design</h2>
-            </div>
-            <section id="personas" class="container-fluid display-flex">
-                <h3>Visual Design Style Guide</h3>
-
-                        <div id="styleg" class="container-fluid display-flex flex-column justify-content-center align-items-center">
-                            <img src="images/visual.png" style="border: .1rem solid black;" />
-                     
-                </div>
-
-            </section> -->
-
-            <section id="prototype" class="container-fluid display-flex">
-                <h2>Hi-Fi Prototypes</h2>
-
-                <div class="style-container">
-                    <div class="personas-container" class="container-fluid display-flex">
-       
-                        <img id="wireframe" src="images/phoneproto.png" />
-    
-                        <img id="wireframe" src="images/ipadproto.png" />
-    
-                        <img id="wireframe" src="images/webproto.png"/>
-                </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="web" class="container-fluid display-flex">
-                <div id="webs" style="text-align:center"
-                    class="container-fluid display-flex flex-column justify-content-center align-items-center">
-
-                    <h2>Redesigned Website</h2>
-                    <p class="lead" style="text-align: center;">(Click on image to view the website)</p>
-                    <div class="style-container" class="container-fluid display-flex">
-                       
-                        <a href="https://hungrysloth344.github.io/Responsive-Redesign/">
-                            
-                        <img id="redesigned" src="images/redesigned.png" />
-                        </a>
-                    </div>
-                </div>
-            </section>
+    <section id="web" class="container-fluid display-flex">
+        <h2>Redesigned Website</h2>
+        <p class="lead" style="text-align: center;">(Click on image to view the website)</p>
+        <a href="https://hungrysloth344.github.io/Responsive-Redesign/" alt="link to new website">
+            <img id="redesigned" src="images/redesigned.png" alt="screenshot of the new redesigned website" />
+        </a>
+    </section>
 
 </body>
 
